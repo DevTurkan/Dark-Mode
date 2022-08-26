@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border-radius: 0;
+	border: 0;
+}
+
+html,
+body{
+	width: 100%;
+	min-height: 100vh;
+	float: left;
+}
+
+button{
+	cursor: pointer;
+	background-color: transparent;
+}
+
+:root{
+    --bodybgcolor: #fff;
+    --textcolor: #000;
+}
+.theme_switch_btn{
+    width: 50px;
+    height: 50px;
+    background-image: url(moon_icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text_box{
+    padding: 10px;
+}
+.text_box h1,
+.text_box p{
+    color: var(--textcolor);
+}
+
+body{
+    background-color: var(--bodybgcolor);
+}
+.theme_switch_btn.dark_mode{
+    background-image: url(sun_icon.png);
+}
